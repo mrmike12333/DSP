@@ -29,6 +29,6 @@ def calc_dft(x: np.ndarray, num_freq_bins: int, scale: bool):
         dft[freq_bin] = np.sum(np.multiply(x, complex_sine))
 
     if scale:
-       dft /= np.max(np.abs(dft))
-       
+        dft /= np.max(np.abs(dft))
+    
     return dft
