@@ -21,7 +21,7 @@ def calc_dft(x: np.ndarray, num_freq_bins: int, scale: bool):
 
     num_samples = x.shape[0]
 
-    dft = np.zeros(num_freq_bins, dtype='complex_')
+    dft = np.zeros(num_freq_bins, dtype='complex')
 
     # The discrete time vector
     n = np.arange(num_samples)
